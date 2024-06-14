@@ -8,7 +8,7 @@ Bu projede, Friends castından gelen verilerle etkileşimde bulunmanıza izin ve
 
 API Friends karakterlerinin bir listesini tutuyor ve ekleme, silme ve düzenleme yapmanıza olanak tanıyor. API uç noktalarının tümü (oturum açma uç noktası hariç) "korumalı" kabul edilir; bu, isteği başlıkta bir kimlik doğrulama belirteci ile yapmanız gerektiği anlamına gelir, aksi takdirde API bir "401" hatası geri gönderir. API'mizin "http://localhost:9000"de sunduğu uç noktalara bir göz atın.
 
-- **[POST]** \* `/api/login`: diğer tüm requestlerin headerınına eklenmesi gereken bir token döndürür. İsteğin `body` si olara şu kriterleri gönderin: `{ username: 'workintech', password: 'wecandoit' }`
+- **[POST]** \* `/api/login`: diğer tüm requestlerin headerınına eklenmesi gereken bir token döndürür. İsteğin `body` si olara şu kriterleri gönderin: `{ username: ' ', password: 'wecandoit' }`
 - **[POST]** \* `/api/logout`: kullanımdaki bir tokenı siler. inaktif bir token döndürür.
 - **[GET]** `/api/friends`: Friends karakterlerini döndürür.
 - **[GET]** `/api/friends/123`: id si URL'ye girilen karakteri döndürür (123 temsili bir değerdir)
